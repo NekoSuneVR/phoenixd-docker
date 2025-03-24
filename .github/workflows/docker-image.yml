@@ -59,7 +59,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: docker/Dockerfile
+          file: Dockerfile
           tags: |
             ghcr.io/nekosunevr/phoenixd-docker:latest
             ghcr.io/nekosunevr/phoenixd-docker:${{ env.tag }}
